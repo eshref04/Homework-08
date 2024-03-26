@@ -1,0 +1,1868 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.container {
+  margin-top: 0px auto;
+  width: 1300px;
+}
+
+.header__above {
+  font-weight: 400;
+  /* position: fixed; */
+  padding: 20px 0;
+  width: 100%;
+  /* z-index: 999; */
+  background: linear-gradient(90deg, #f01543 -1.58%, #fe724c 100%);
+}
+
+.header__above .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.header__left,
+.header__left a {
+  color: white;
+  text-decoration: none;
+}
+
+.header__left .fa-angle-down {
+  font-size: 12px;
+}
+
+.header__mid p {
+  margin: 0px;
+  color: #000929;
+}
+
+.header__mid a {
+  color: #000929;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.header__right {
+  color: white;
+  display: flex;
+  gap: 30px;
+}
+
+.header__right a {
+  margin-left: 6px;
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+}
+
+.header__down {
+  width: 100%;
+  background-color: #000929;
+  top: 0;
+  padding: 24px;
+  position: sticky;
+  z-index: 999;
+}
+
+.header__down nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  gap: 18px;
+}
+
+.header__down__menu__lists {
+  list-style-type: none;
+  color: white;
+  display: flex;
+  gap: 22px;
+  margin: 0px;
+}
+
+.header__down__menu__lists a {
+  text-decoration: none;
+  color: white;
+}
+
+.header__down__menu__lists li {
+  transition: linear 0.3s;
+  cursor: pointer;
+}
+
+.header__down__menu__lists li:hover {
+  border-bottom: 1px solid red;
+}
+
+.header__down__btn {
+  display: flex;
+
+  align-items: center;
+}
+
+.header__down__btn svg {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+
+.header__down__btn svg:hover {
+  cursor: pointer;
+}
+
+.header__down__btn__inp {
+  position: relative;
+  margin-right: 10px;
+}
+
+.header__down__btn input {
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 13px 20px;
+  border: 1px solid #6c727f;
+  background-color: #122833;
+}
+
+.header__down__btn__fav {
+  width: 52px;
+  height: 52px;
+  color: white;
+  border-radius: 50%;
+  border: 1px solid #6c727f;
+  background-color: #122833;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+  position: relative;
+  transition: linear 0.3s;
+}
+
+.header__down__btn__fav:hover {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+.header__down__btn__shop {
+  width: 52px;
+  height: 52px;
+  color: white;
+  border-radius: 50%;
+  border: 1px solid #6c727f;
+  background-color: #122833;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+  position: relative;
+  margin-left: 10px;
+  transition: linear 0.3s;
+}
+
+.header__down__btn__shop:hover {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+.header__down__btn__fav::after {
+  position: absolute;
+  content: "8";
+  top: 0;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  background-color: #f01543;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 500;
+  font-family: Plus Jakarta Sans;
+  border-radius: 50%;
+}
+
+.header__down__btn__shop::after {
+  position: absolute;
+  content: "8";
+  top: 0;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  background-color: #f01543;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 500;
+  font-family: Plus Jakarta Sans;
+  border-radius: 50%;
+}
+
+.header__down__login {
+  display: flex;
+  gap: 20px;
+}
+
+.header__down__login button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 13px 32px;
+  font-size: 16px;
+  border-radius: 10px;
+  font-weight: 600;
+  color: white;
+  border: 1px solid white;
+  background-color: #122833;
+  transition: linear 0.3s;
+}
+
+.header__down__login button:hover {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.header__down__login button:first-child {
+  background-color: #f01543;
+  border: none;
+}
+
+.home__reserv__section {
+  width: 100%;
+  padding: 263px 0 247px;
+  background-image: url(https://reservq.vercel.app/assets/banner-bg-two-751df5dc.png);
+  background-size: cover;
+}
+
+.home__reserv__section .container {
+  color: white;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.home__reserv__section__heading h1 {
+  font-size: 68px;
+  font-weight: 700;
+}
+
+.home__reserv__section__heading span {
+  color: #f53b46;
+}
+
+.home__reserv__section__heading p {
+  padding-top: 32px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.home__reserv__section__buttons {
+  display: flex;
+  padding: 12px;
+  background-color: #fff;
+  width: 612px;
+  border-radius: 10px;
+  box-shadow: 0 30px 30px #5a5a5a1a;
+  gap: 12px;
+  margin-top: 72px;
+}
+
+.home__reserv__section__buttons button {
+  /* overflow: hidden; */
+  /* z-index: 1; */
+  font-size: 20px;
+
+  font-weight: 600;
+  text-align: center;
+  border-radius: 10px;
+  width: 188px;
+  height: 68px;
+}
+
+.home__reserv__section__buttons__del {
+  border: none;
+  background-color: #f01543;
+  color: white;
+  transition: linear 0.3s;
+}
+
+.home__reserv__section__buttons__loc,
+.home__reserv__section__buttons__rest {
+  border: 1px solid #f01543;
+  color: #f01543;
+  transition: linear 0.3s;
+}
+
+.home__reserv__section__buttons__loc:hover,
+.home__reserv__section__buttons__rest:hover {
+  cursor: pointer;
+  background-color: red;
+  color: white;
+}
+
+.home__reserv__section__buttons__del:hover {
+  background-color: white;
+  color: red;
+  border: 1px solid red;
+  cursor: pointer;
+}
+
+.home__category__section {
+  background-image: url(https://reservq.vercel.app/assets/categories-bg-2c92439a.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.home__category__section .container {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.home__category__section__heading {
+  padding: 80px 0px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home__category__section__heading h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #000929;
+}
+
+.home__category__section__heading button {
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #fff;
+  border: 1px solid #6c727f;
+  color: #0b0a0f;
+  padding: 13px 32px;
+  border-radius: 10px;
+  transition: linear 0.3s;
+}
+
+.home__category__section__heading button:hover {
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+.home__category__section__food {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home__category__section__food__burg,
+.home__category__section__food__sand,
+.home__category__section__food__mex,
+.home__category__section__food__ita {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 0 20px 0px;
+  background-color: #f4f4f6;
+  border-radius: 20px;
+  justify-content: center;
+  width: 300px;
+  transition: linear 0.3s;
+}
+
+.home__category__section__food__burg:hover,
+.home__category__section__food__sand:hover,
+.home__category__section__food__mex:hover,
+.home__category__section__food__ita:hover {
+  background-color: white;
+  color: red;
+  cursor: pointer;
+}
+
+.home__category__section__food__burg__icon,
+.home__category__section__food__sand__icon,
+.home__category__section__food__mex__icon,
+.home__category__section__food__ita__icon {
+  width: 82px;
+  height: 82px;
+  background-color: #fff;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 36px;
+}
+
+.home__category__section__food__burg__text,
+.home__category__section__food__sand__text,
+.home__category__section__food__mex__text,
+.home__category__section__food__ita__text {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+}
+
+.home__category__section__food__burg__text h3,
+.home__category__section__food__sand__text h3,
+.home__category__section__food__mex__text h3,
+.home__category__section__food__ita__text h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.home__category__section__food__burg__text h4,
+.home__category__section__food__sand__text h4,
+.home__category__section__food__mex__text h4,
+.home__category__section__food__ita__text h4 {
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  margin-left: 10px;
+}
+
+.home__category__section__food__burg__text h4::before,
+.home__category__section__food__sand__text h4::before,
+.home__category__section__food__mex__text h4::before,
+.home__category__section__food__ita__text h4::before {
+  position: absolute;
+  content: "";
+  bottom: 6px;
+  left: -10px;
+  width: 8px;
+  height: 8px;
+  background-color: #fe724c;
+  border-radius: 50px;
+}
+
+.home__category__section__images {
+  display: flex;
+  margin-top: 80px;
+  gap: 30px;
+  overflow: hidden;
+}
+
+.home__category__section__images img {
+  height: 350px;
+}
+
+.home__category__section__images img:hover {
+  cursor: pointer;
+}
+
+.home__category__section__images img:first-child {
+  width: 40%;
+}
+
+.home__category__section__images img:last-child {
+  width: 60%;
+}
+
+.home__meals__section {
+  background-image: url(https://reservq.vercel.app/assets/traditional-bg-9423c4a0.png);
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.home__meals__section .container {
+  display: flex;
+  flex-direction: column;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  align-items: center;
+}
+
+.home__meals__section__heading h2 {
+  text-align: center;
+  margin: 45px 0 0px;
+  font-size: 48px;
+  color: #000929;
+  font-weight: 700;
+}
+
+.home__meals__section__filters__list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  gap: 24px;
+  padding: 8px 10px;
+}
+
+.home__meals__section__filters__list a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #4d5461;
+}
+
+.home__meals__section__filters {
+  padding: 6px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid rgba(240, 21, 67, 0.1);
+  margin: 35px 0 38px;
+}
+
+.home__meals__section__cards__above__left__image,
+.home__meals__section__cards__above__mid__image,
+.home__meals__section__cards__above__right__image,
+.home__meals__section__cards__down__left__image,
+.home__meals__section__cards__down__mid__image,
+.home__meals__section__cards__down__right__image {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.home__meals__section__cards__above__left__image__icon,
+.home__meals__section__cards__above__mid__image__icon,
+.home__meals__section__cards__above__right__image__icon,
+.home__meals__section__cards__down__left__image__icon,
+.home__meals__section__cards__down__mid__image__icon,
+.home__meals__section__cards__down__right__image__icon {
+  position: absolute;
+  top: 18px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f01543;
+  font-size: 19px;
+
+  display: flex;
+}
+
+.home__meals__section__cards__above__left__image__text {
+  position: absolute;
+  top: 18px;
+  right: 10px;
+
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 6px;
+  background-color: #000929cc;
+}
+
+.home__meals__section__cards__above,
+.home__meals__section__cards__down {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.home__meals__section__cards__above__left,
+.home__meals__section__cards__above__mid,
+.home__meals__section__cards__above__right,
+.home__meals__section__cards__down__left,
+.home__meals__section__cards__down__mid,
+.home__meals__section__cards__down__right {
+  width: 33.33%;
+  transition: linear 0.3s;
+}
+
+.home__meals__section__cards__above__left:hover,
+.home__meals__section__cards__above__mid:hover,
+.home__meals__section__cards__above__right:hover,
+.home__meals__section__cards__down__left:hover,
+.home__meals__section__cards__down__mid:hover,
+.home__meals__section__cards__down__right:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+.home__meals__section__cards__above__left__image2 {
+  bottom: -18px;
+  left: 0;
+  position: absolute;
+  width: 110px;
+  height: 40px;
+}
+
+.home__meals__section__cards__above__mid__image__text {
+  position: absolute;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 6px;
+  background-color: #000929cc;
+  top: 18px;
+  right: 10px;
+}
+
+.home__meals__section__cards__above__right__image__text,
+.home__meals__section__cards__down__left__image__text,
+.home__meals__section__cards__down__mid__image__text,
+.home__meals__section__cards__down__right__image__text {
+  position: absolute;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 6px;
+  background-color: #000929cc;
+  top: 18px;
+  right: 10px;
+}
+
+.home__meals__section__cards__above__left__sale,
+.home__meals__section__cards__above__mid__sale,
+.home__meals__section__cards__above__right__sale,
+.home__meals__section__cards__down__left__sale,
+.home__meals__section__cards__down__mid__sale,
+.home__meals__section__cards__down__right__sale {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 16px;
+}
+
+.home__meals__section__cards__above__left__sale h3,
+.home__meals__section__cards__above__mid__sale h3,
+.home__meals__section__cards__above__right__sale h3,
+.home__meals__section__cards__down__left__sale h3,
+.home__meals__section__cards__down__mid__sale h3,
+.home__meals__section__cards__down__right__sale h3 {
+  font-size: 24px;
+  font-weight: 800;
+  color: #f01543;
+  margin: 0px;
+}
+
+.home__meals__section__cards__above__left__sale::after,
+.home__meals__section__cards__above__mid__sale::after,
+.home__meals__section__cards__above__right__sale::after,
+.home__meals__section__cards__down__left__sale::after,
+.home__meals__section__cards__down__mid__sale::after,
+.home__meals__section__cards__down__right__sale::after {
+  content: "";
+  background-color: rgba(220, 218, 218, 0.809);
+  width: 93%;
+  height: 1px;
+  position: absolute;
+  top: 60px;
+}
+
+.home__meals__section__cards__above__left__sale__star,
+.home__meals__section__cards__above__mid__sale__star,
+.home__meals__section__cards__above__right__sale__star,
+.home__meals__section__cards__down__left__sale__star,
+.home__meals__section__cards__down__mid__sale__star,
+.home__meals__section__cards__down__right__sale__star {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000929;
+}
+
+.home__meals__section__cards__above__left__sale__star i,
+.home__meals__section__cards__above__mid__sale__star i,
+.home__meals__section__cards__above__right__sale__star i,
+.home__meals__section__cards__down__left__sale__star i,
+.home__meals__section__cards__down__mid__sale__star i,
+.home__meals__section__cards__down__right__sale__star i {
+  color: #ffb23e;
+  font-size: 19px;
+}
+
+.home__meals__section__cards__above__left__recept,
+.home__meals__section__cards__above__mid__recept,
+.home__meals__section__cards__above__right__recept,
+.home__meals__section__cards__down__left__recept,
+.home__meals__section__cards__down__mid__recept,
+.home__meals__section__cards__down__right__recept {
+  padding: 10px 16px;
+}
+
+.home__meals__section__cards__above__left__recept a,
+.home__meals__section__cards__above__mid__recept a,
+.home__meals__section__cards__above__right__recept a,
+.home__meals__section__cards__down__left__recept a,
+.home__meals__section__cards__down__mid__recept a,
+.home__meals__section__cards__down__right__recept a {
+  text-decoration: none;
+  color: #000929;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.home__meals__section__cards__above__left__recept__done__icon,
+.home__meals__section__cards__above__left__recept__done2__icon,
+.home__meals__section__cards__above__mid__recept__done__icon,
+.home__meals__section__cards__above__left__mid__done2__icon,
+.home__meals__section__cards__above__right__recept__done__icon,
+.home__meals__section__cards__above__right__recept__done2__icon,
+.home__meals__section__cards__down__left__recept__done__icon,
+.home__meals__section__cards__down__left__recept__done2__icon,
+.home__meals__section__cards__down__mid__recept__done__icon,
+.home__meals__section__cards__down__left__mid__done2__icon,
+.home__meals__section__cards__down__right__recept__done__icon,
+.home__meals__section__cards__down__right__recept__done2__icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #fe724c;
+  color: #fe724c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.home__meals__section__cards__above__left__recept__done,
+.home__meals__section__cards__above__left__recept__done2,
+.home__meals__section__cards__above__mid__recept__done,
+.home__meals__section__cards__above__mid__recept__done2,
+.home__meals__section__cards__above__right__recept__done,
+.home__meals__section__cards__above__right__recept__done2,
+.home__meals__section__cards__down__left__recept__done,
+.home__meals__section__cards__down__left__recept__done2,
+.home__meals__section__cards__down__mid__recept__done,
+.home__meals__section__cards__down__mid__recept__done2,
+.home__meals__section__cards__down__right__recept__done,
+.home__meals__section__cards__down__right__recept__done2 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #4d5461;
+}
+
+.home__meals__section__cards__above__left__cart,
+.home__meals__section__cards__above__mid__cart,
+.home__meals__section__cards__above__right__cart,
+.home__meals__section__cards__down__left__cart,
+.home__meals__section__cards__down__mid__cart,
+.home__meals__section__cards__down__right__cart {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #6c727f;
+  border: 1px solid rgba(220, 218, 218, 0.809);
+  padding: 16px;
+  width: 93%;
+  margin: 16px 0px 16px 14px;
+  transition: linear 0.3s;
+}
+
+.home__meals__section__cards__above__left__cart:hover,
+.home__meals__section__cards__above__mid__cart:hover,
+.home__meals__section__cards__above__right__cart:hover,
+.home__meals__section__cards__down__left__cart:hover,
+.home__meals__section__cards__down__mid__cart:hover,
+.home__meals__section__cards__down__right__cart:hover {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+.home__meals__section__cards__above__left__body,
+.home__meals__section__cards__above__mid__body,
+.home__meals__section__cards__above__right__body,
+.home__meals__section__cards__down__left__body,
+.home__meals__section__cards__down__mid__body,
+.home__meals__section__cards__down__right__body {
+  border-radius: 0px 0px 10px 10px;
+  background-color: white;
+  padding-bottom: 4px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.home__meals__section__foot {
+  background-color: #f01543;
+  color: white;
+  border: none;
+  padding: 13px 32px;
+  border-radius: 10px;
+  margin-top: 80px;
+  font-size: 20px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  transition: linear 0.3s;
+}
+
+.home__meals__section__foot:hover {
+  background-color: white;
+  color: red;
+  cursor: pointer;
+  border: 1px solid red;
+}
+
+.home__exp__section {
+  background-image: url(https://reservq.vercel.app/assets/Process-bg-88e10cae.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 920px;
+  margin-top: 80px;
+  width: 100%;
+}
+
+.home__exp__section .container {
+  display: flex;
+  gap: 100px;
+  height: 100%;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  align-items: center;
+}
+
+.home__exp__section__left {
+  margin-left: -140px;
+}
+
+.home__exp__section__right {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.home__exp__section__right h2 {
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.home__exp__section__right__steps__loc,
+.home__exp__section__right__steps__selc,
+.home__exp__section__right__steps__pay,
+.home__exp__section__right__steps__cho {
+  border-radius: 20px;
+  background: #0d1634;
+  width: 540px;
+  color: white;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  transition: linear 0.3s;
+}
+
+.home__exp__section__right__steps__loc:hover,
+.home__exp__section__right__steps__selc:hover,
+.home__exp__section__right__steps__pay:hover,
+.home__exp__section__right__steps__cho:hover {
+  cursor: pointer;
+  background-color: #f84e48;
+}
+
+.home__exp__section__right__steps__loc__icon,
+.home__exp__section__right__steps__selc__icon,
+.home__exp__section__right__steps__pay__icon,
+.home__exp__section__right__steps__cho__icon {
+  width: 72px;
+  height: 72px;
+  background-color: #ffffff1a;
+  border-radius: 16px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+}
+
+.home__exp__section__right__steps__loc__text h3,
+.home__exp__section__right__steps__selc__text h3,
+.home__exp__section__right__steps__pay__text h3,
+.home__exp__section__right__steps__cho__text h3 {
+  font-size: 24px;
+}
+
+.home__exp__section__right__steps__loc__text p,
+.home__exp__section__right__steps__selc__text p,
+.home__exp__section__right__steps__pay__text p,
+.home__exp__section__right__steps__cho__text p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.488);
+  margin: 0px;
+}
+
+.home__pop__section .container {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.home__pop__section {
+  width: 100%;
+}
+
+.home__pop__section h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #000929;
+  margin: 50px 0px;
+}
+
+.home__pop__section__items__above,
+.home__pop__section__items__mid,
+.home__pop__section__items__down {
+  display: flex;
+  gap: 30px;
+  margin-top: 34px;
+}
+
+.home__pop__section__items__above__left,
+.home__pop__section__items__above__right,
+.home__pop__section__items__mid__left,
+.home__pop__section__items__mid__right,
+.home__pop__section__items__down__left,
+.home__pop__section__items__down__right {
+  display: flex;
+  transition: linear 0.3s;
+}
+
+.home__pop__section__items__above__left:hover,
+.home__pop__section__items__above__right:hover,
+.home__pop__section__items__mid__left:hover,
+.home__pop__section__items__mid__right:hover,
+.home__pop__section__items__down__left:hover,
+.home__pop__section__items__down__right:hover {
+  cursor: pointer;
+  transform: scale(0.9);
+}
+
+.home__pop__section__items__above__left__image,
+.home__pop__section__items__above__right__image,
+.home__pop__section__items__mid__left__image,
+.home__pop__section__items__mid__right__image,
+.home__pop__section__items__down__left__image,
+.home__pop__section__items__down__right__image {
+  position: relative;
+}
+
+.home__pop__section__items__above__left__star,
+.home__pop__section__items__above__right__star,
+.home__pop__section__items__mid__left__star,
+.home__pop__section__items__mid__right__star,
+.home__pop__section__items__down__left__star,
+.home__pop__section__items__down__right__star {
+  position: absolute;
+  top: 18px;
+  left: 10px;
+
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 6px;
+  background-color: #000929cc;
+}
+
+.home__pop__section__items__above__left__star i,
+.home__pop__section__items__above__right__star i,
+.home__pop__section__items__mid__left__star i,
+.home__pop__section__items__mid__right__star i,
+.home__pop__section__items__down__left__star i,
+.home__pop__section__items__down__right__star i {
+  color: #ffc107;
+}
+
+.home__pop__section__items__above__left__body,
+.home__pop__section__items__above__right__body,
+.home__pop__section__items__mid__left__body,
+.home__pop__section__items__mid__right__body,
+.home__pop__section__items__down__left__body,
+.home__pop__section__items__down__right__body {
+  padding: 20px;
+  background-color: white;
+  width: 400px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.home__pop__section__items__above__left__recept a,
+.home__pop__section__items__above__right__recept a,
+.home__pop__section__items__mid__left__recept a,
+.home__pop__section__items__mid__right__recept a,
+.home__pop__section__items__down__left__recept a,
+.home__pop__section__items__down__right__recept a {
+  text-decoration: none;
+  color: #000929;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.home__pop__section__items__above__left__recept__done__icon,
+.home__pop__section__items__above__left__recept__done2__icon,
+.home__pop__section__items__above__right__recept__done__icon,
+.home__pop__section__items__above__right__recept__done2__icon,
+.home__pop__section__items__mid__left__recept__done__icon,
+.home__pop__section__items__mid__left__recept__done2__icon,
+.home__pop__section__items__mid__right__recept__done__icon,
+.home__pop__section__items__mid__right__recept__done2__icon,
+.home__pop__section__items__down__left__recept__done__icon,
+.home__pop__section__items__down__left__recept__done2__icon,
+.home__pop__section__items__down__right__recept__done__icon,
+.home__pop__section__items__down__right__recept__done2__icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #fe724c;
+  color: #fe724c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.home__pop__section__items__above__left__recept__done,
+.home__pop__section__items__above__left__recept__done2,
+.home__pop__section__items__above__right__recept__done,
+.home__pop__section__items__above__right__recept__done2,
+.home__pop__section__items__mid__left__recept__done,
+.home__pop__section__items__mid__left__recept__done2,
+.home__pop__section__items__mid__right__recept__done,
+.home__pop__section__items__mid__right__recept__done2,
+.home__pop__section__items__down__left__recept__done,
+.home__pop__section__items__down__left__recept__done2,
+.home__pop__section__items__down__right__recept__done,
+.home__pop__section__items__down__right__recept__done2 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #4d5461;
+}
+
+.home__pop__section__items__above__left__recept,
+.home__pop__section__items__above__right__recept,
+.home__pop__section__items__mid__left__recept,
+.home__pop__section__items__mid__right__recept,
+.home__pop__section__items__down__left__recept,
+.home__pop__section__items__down__right__recept {
+  position: relative;
+}
+
+.home__pop__section__items__above__left__recept::after,
+.home__pop__section__items__above__right__recept::after,
+.home__pop__section__items__mid__left__recept::after,
+.home__pop__section__items__mid__right__recept::after,
+.home__pop__section__items__down__left__recept::after,
+.home__pop__section__items__down__right__recept::after {
+  content: "";
+  background-color: rgba(220, 218, 218, 0.809);
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  bottom: -10px;
+}
+
+.home__pop__section__items__above__left__cart,
+.home__pop__section__items__above__right__cart,
+.home__pop__section__items__mid__left__cart,
+.home__pop__section__items__mid__right__cart,
+.home__pop__section__items__down__left__cart,
+.home__pop__section__items__down__right__cart {
+  display: flex;
+  margin-top: 34px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home__pop__section__items__above__left__cart h3,
+.home__pop__section__items__above__right__cart h3,
+.home__pop__section__items__mid__left__cart h3,
+.home__pop__section__items__mid__right__cart h3,
+.home__pop__section__items__down__left__cart h3,
+.home__pop__section__items__down__right__cart h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 800;
+  color: #000929;
+}
+
+.home__pop__section__items__above__left__cart__icon,
+.home__pop__section__items__above__right__cart__icon,
+.home__pop__section__items__mid__left__cart__icon,
+.home__pop__section__items__mid__right__cart__icon,
+.home__pop__section__items__down__left__cart__icon,
+.home__pop__section__items__down__right__cart__icon {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 12px 16px;
+  font-size: 18px;
+  border-radius: 10px;
+  font-weight: 500;
+  border: 1.5px solid rgba(211, 213, 218, 0.5);
+  width: 163px;
+  background-color: #fff;
+  color: #6c727f;
+}
+
+.home__pop__section__items__above__left__cart__icon i,
+.home__pop__section__items__above__right__cart__icon i,
+.home__pop__section__items__mid__left__cart__icon i,
+.home__pop__section__items__mid__right__cart__icon i,
+.home__pop__section__items__down__left__cart__icon i,
+.home__pop__section__items__down__right__cart__icon i {
+  font-size: 18px;
+  margin-top: 4px;
+}
+
+.home__opinion__section {
+  width: 100%;
+  background-color: #000929;
+  padding: 81px 0 100px;
+  margin-top: 100px;
+  color: white;
+}
+
+.home__opinion__section .container {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.home__opinion__section__heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.home__opinion__section__heading h2 {
+  font-size: 48px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.home__opinion__section__card__container {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.home__opinion__section__card__above {
+  border-radius: 20px;
+  border: 1.5px solid rgba(255, 255, 255, 0.08);
+  background-color: #000929;
+  padding: 10px;
+  width: 450px;
+  color: #e8e6f999;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.home__opinion__section__card:hover {
+  cursor: pointer;
+}
+
+.home__opinion__section__card__down {
+  display: flex;
+  margin-top: 40px;
+  gap: 24px;
+}
+
+.home__opinion__section__card__down__name i {
+  color: #ffb23e;
+  font-size: 16px;
+  margin: 14px 0px;
+}
+
+.home__opinion__section__card__down__name h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.home__opinion__section__card__down__name h5 {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.home__questions__section {
+  width: 100%;
+  background-image: url(https://reservq.vercel.app/assets/faq-bg-7118ca12.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px;
+}
+
+.home__questions__section .container {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.home__questions__section__left h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #000929;
+  margin-bottom: 30px;
+}
+
+.questions {
+  background-color: #fff;
+  border: 1px solid transparent;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  font-size: 18px;
+  padding: 20px;
+  font-weight: 600;
+  color: #000929;
+}
+
+.home__questions__section__images {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.home__questions__section__images__above {
+  display: flex;
+  gap: 30px;
+}
+
+.home__questions__section__images__down {
+  display: flex;
+  gap: 30px;
+}
+
+.home__questions__section__images__above__right,
+.home__questions__section__images__down__left {
+  position: relative;
+  color: white;
+  z-index: 0;
+}
+
+.home__questions__section__images__above__right h4,
+.home__questions__section__images__down__left h4 {
+  position: absolute;
+  bottom: 44px;
+  left: 40px;
+}
+
+.home__questions__section__images__above__right__overlay {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  background-color: #000929d6;
+  border-radius: 10px;
+}
+
+.home__questions__section__images__down__left__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #f01543d6;
+  border-radius: 10px;
+}
+
+.home__questions__section__images__above__right__icon,
+.home__questions__section__images__down__left__icon {
+  position: absolute;
+  top: 130px;
+  left: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.home__questions__section__images__above__right__icon i,
+.home__questions__section__images__down__left__icon i {
+  font-size: 24px;
+}
+
+.home__questions__section__images__above__right__icon h2,
+.home__questions__section__images__down__left__icon h2 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.home__apps__section {
+  width: 100%;
+  background: url(https://reservq.vercel.app/assets/rest-bg-542f355f.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 101px 0 0px 0px;
+}
+
+.home__apps__section .container {
+  display: flex;
+  gap: 100px;
+}
+
+.home__apps__section__left {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.home__apps__section__left h2 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.home__apps__section__left h4 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #e5e6eb;
+}
+
+.home__apps__section__left__buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.home__apps__section__left__buttons button {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px;
+  justify-content: center;
+  border: none;
+  /* width: 225px; */
+  padding: 20px;
+  height: 68px;
+  font-weight: 700;
+}
+
+.button__play {
+  background-color: white;
+  color: black;
+}
+
+.button__play i {
+  font-size: 32px;
+}
+
+.button__app {
+  background-color: black;
+  color: white;
+}
+
+.button__app i {
+  font-size: 44px;
+}
+
+footer {
+  padding: 110px 0;
+  background: url(https://reservq.vercel.app/assets/Footers-bg-7148736e.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer .container {
+  display: flex;
+  gap: 40px;
+  color: white;
+}
+
+.footer__left h4 {
+  color: #f4f4f6;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.footer__left__down {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.footer__left__down__icon {
+  border-radius: 8px;
+  background: #19213e;
+  width: 40px;
+  height: 40px;
+
+  line-height: 40px;
+  color: #747681;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: linear 0.3s;
+}
+
+.footer__left__down__icon:hover {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+.footer__mid__left,
+.footer__mid__right {
+  display: flex;
+  flex-direction: column;
+  padding: 0 12px;
+  gap: 30px;
+}
+
+.footer__mid__left h3,
+.footer__mid__right h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.footer__mid__left ul,
+.footer__mid__right ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer__mid__left ul a:hover,
+.footer__mid__right ul a:hover {
+  color: red;
+}
+
+.footer__mid__left ul a,
+.footer__mid__right ul a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  margin-left: -30px;
+  font-weight: 500;
+  transition: linear 0.3s;
+}
+
+.footer__right__above h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.footer__right__above__sub input {
+  width: 261px;
+  height: 56px;
+  background: rgba(231, 229, 234, 0.2);
+  border-radius: 10px;
+  color: #fff;
+  border: 1px solid rgba(231, 229, 234, 0.2);
+  padding-left: 64px;
+}
+
+.footer__right__above__sub i {
+  position: relative;
+  top: 20px;
+  left: 60px;
+  font-size: 20px;
+}
+
+.footer__all {
+  display: flex;
+}
+
+.footer__all2 {
+  display: flex;
+  gap: 16px;
+}
+
+.footer__right__above__sub {
+  display: flex;
+  margin-top: 26px;
+  gap: 20px;
+  margin-left: -38px;
+}
+
+.footer__right__above__sub button {
+  width: 140px;
+  height: 56px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #f01543;
+  color: #fff;
+  padding: 13px 32px;
+  border-radius: 10px;
+  border: none;
+}
+
+.footer__right__above__sub button:hover {
+  background-color: white;
+  color: red;
+  border: 1px solid red;
+}
+
+.footer__right__down {
+  margin-top: 36px;
+}
+
+.footer__right__down h6 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.footer__right__down__images {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.footer__end {
+  width: 100%;
+  padding: 17px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000929;
+  color: #9ea3ae;
+  font-size: 18px;
+}
+
+.footer__end a {
+  font-size: 18px;
+  color: #9ea3ae;
+}
+
+.display__button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: #f01543;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 18px;
+  display: none;
+}
+
+@media only screen and (max-width: 1640px) {
+  .home__meals__section__cards__above,
+  .home__meals__section__cards__mid,
+  .home__meals__section__cards__down {
+    flex-direction: column;
+  }
+
+  .home__meals__section .container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .container {
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  .home__meals__section__lists__all {
+    display: none;
+  }
+
+  .home__meals__section__cards__image__icon,
+  .home__meals__section__cards__image__text {
+    display: none;
+  }
+
+  .home__meals__section__cards__above__left__body,
+  .home__meals__section__cards__above__right__body,
+  .home__meals__section__cards__down__left__body,
+  .home__meals__section__cards__down__right__body,
+  .home__meals__section__cards__above__mid__body,
+  .home__meals__section__cards__down__mid__body {
+    width: 420px;
+  }
+
+  .home__exp__section__left {
+    display: none;
+  }
+
+  .home__exp__section__right h2 {
+    font-size: 34px;
+  }
+
+  .home__exp__section .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home__opinion__section__card__container {
+    flex-direction: column;
+  }
+
+  .home__pop__section .container {
+    display: flex;
+  }
+
+  .home__pop__section__items__above,
+  .home__pop__section__items__mid,
+  .home__pop__section__items__down {
+    flex-direction: column;
+  }
+
+  .home__category__section__food {
+    display: none;
+  }
+
+  .home__category__section__heading {
+    display: none;
+  }
+
+  .sales {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .header__above {
+    display: none;
+  }
+
+  .header__down__menu {
+    display: none;
+  }
+
+  .header__down__btn {
+    display: none;
+  }
+
+  .header__down__login {
+    display: none;
+  }
+
+  .display__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer__all,
+  .footer__all2,
+  .footer__right {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .home__apps__section__left__buttons {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 865px) {
+  .home__apps__section__right {
+    display: none;
+  }
+
+  .home__category__section__images {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+
+  .home__category__section__images img {
+    width: 440px !important;
+  }
+
+  .home__pop__section {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 724px) {
+  .home__questions__section__images {
+    display: none;
+  }
+
+  .home__meals__section__lists__inp {
+    width: 300px;
+  }
+
+  .home__meals__section__lists__inp input {
+    width: 280px;
+  }
+
+  .home__reserv__section__buttons {
+    flex-direction: column;
+    width: 218px;
+  }
+
+  .home__meals__section__filters {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 596px) {
+  .questions {
+    width: 400px;
+  }
+
+  .container {
+    width: 400px;
+  }
+
+  .display__button {
+    margin-right: 80px;
+  }
+
+  .home__apps__section__left h2 {
+    font-size: 24px;
+  }
+
+  .home__apps__section__left h4 {
+    font-size: 16px;
+  }
+
+  .home__exp__section__right__steps__loc,
+  .home__exp__section__right__steps__selc,
+  .home__exp__section__right__steps__pay,
+  .home__exp__section__right__steps__cho {
+    width: 400px;
+  }
+
+  .home__reserv__section__heading h1 {
+    font-size: 32px;
+  }
+
+  .home__reserv__section__heading p {
+    font-size: 16px;
+  }
+
+  .home__reserv__section__buttons button {
+    width: 110px;
+    font-size: 16px;
+  }
+
+  .home__reserv__section__buttons {
+    width: 136px;
+  }
+
+  .home__meals__section__heading h2 {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 466px) {
+  .container {
+    width: 340px;
+  }
+
+  .home__meals__section__cards__above__left__image img,
+  .home__meals__section__cards__above__mid__image img,
+  .home__meals__section__cards__above__right__image img,
+  .home__meals__section__cards__down__left__image img,
+  .home__meals__section__cards__down__mid__image img,
+  .home__meals__section__cards__down__right__image img {
+    width: 300px;
+    height: 200px;
+  }
+
+  .home__meals__section__cards__above__left__body,
+  .home__meals__section__cards__above__mid__body,
+  .home__meals__section__cards__above__right__body,
+  .home__meals__section__cards__down__left__body,
+  .home__meals__section__cards__down__mid__body,
+  .home__meals__section__cards__down__right__body {
+    width: 300px;
+  }
+
+  .home__meals__section__cards__above__left__image2 {
+    display: none;
+  }
+
+  .home__questions__section__left h2 {
+    font-size: 20px;
+  }
+
+  .questions {
+    width: 250px;
+    font-size: 16px;
+  }
+
+  .footer__right__above__sub {
+    flex-direction: column;
+    margin-left: 10px;
+  }
+
+  .footer__right__above__sub i {
+    display: none;
+  }
+
+  .footer__right__down__images {
+    flex-direction: column;
+  }
+
+  .home__meals__section__lists__inp {
+    width: 200px;
+  }
+
+  .home__meals__section__lists__inp input {
+    width: 190px;
+    font-size: 14px;
+  }
+
+  .footer__right__down__images img {
+    width: 50px;
+    height: 30px;
+  }
+
+  .home__exp__section__right__steps__loc,
+  .home__exp__section__right__steps__selc,
+  .home__exp__section__right__steps__pay,
+  .home__exp__section__right__steps__cho {
+    width: 300px;
+    font-size: 14px;
+  }
+
+  .home__exp__section__right__steps__loc img,
+  .home__exp__section__right__steps__selc img,
+  .home__exp__section__right__steps__pay img,
+  .home__exp__section__right__steps__cho img {
+    display: none;
+  }
+
+  .home__exp__section__right__steps__selc__icon,
+  .home__exp__section__right__steps__loc__icon,
+  .home__exp__section__right__steps__cho__icon,
+  .home__exp__section__right__steps__pay__icon {
+    font-size: 16px;
+  }
+
+  .home__opinion__section {
+    display: none;
+  }
+
+  .home__category__section__images img {
+    height: 200px !important;
+  }
+}
+
+@media only screen and (max-width: 395px) {
+  .container {
+    width: 260px;
+  }
+
+  .display__button {
+    padding: 10px;
+  }
+}

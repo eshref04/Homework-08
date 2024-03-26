@@ -1,0 +1,953 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.container {
+  margin-top: 0px auto;
+  width: 1300px;
+}
+
+.header__above {
+  font-weight: 400;
+
+  padding: 20px 0;
+  width: 100%;
+
+  background: linear-gradient(90deg, #f01543 -1.58%, #fe724c 100%);
+}
+
+.header__above .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.header__left,
+.header__left a {
+  color: white;
+  text-decoration: none;
+}
+
+.header__left .fa-angle-down {
+  font-size: 12px;
+}
+
+.header__mid p {
+  margin: 0px;
+  color: #000929;
+}
+
+.header__mid a {
+  color: #000929;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.header__right {
+  color: white;
+  display: flex;
+  gap: 30px;
+}
+
+.header__right a {
+  margin-left: 6px;
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+}
+
+.header__down {
+  width: 100%;
+  background-color: #000929;
+  top: 0;
+  padding: 24px;
+  position: sticky;
+  z-index: 999;
+}
+
+.header__down nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  gap: 18px;
+}
+
+.header__down__menu__lists {
+  list-style-type: none;
+  color: white;
+  display: flex;
+  gap: 22px;
+  margin: 0px;
+}
+
+.header__down__menu__lists a {
+  text-decoration: none;
+  color: white;
+}
+
+.header__down__menu__lists li {
+  transition: linear 0.3s;
+  cursor: pointer;
+}
+
+.header__down__menu__lists li:hover {
+  border-bottom: 1px solid red;
+}
+
+.header__down__btn {
+  display: flex;
+
+  align-items: center;
+}
+
+.header__down__btn svg {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+
+.header__down__btn svg:hover {
+  cursor: pointer;
+}
+
+.header__down__btn__inp {
+  position: relative;
+  margin-right: 10px;
+}
+
+.header__down__btn input {
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 13px 20px;
+  border: 1px solid #6c727f;
+  background-color: #122833;
+}
+
+.header__down__btn__fav {
+  width: 52px;
+  height: 52px;
+  color: white;
+  border-radius: 50%;
+  border: 1px solid #6c727f;
+  background-color: #122833;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+  position: relative;
+  transition: linear 0.3s;
+}
+
+.header__down__btn__fav:hover {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+.header__down__btn__shop {
+  width: 52px;
+  height: 52px;
+  color: white;
+  border-radius: 50%;
+  border: 1px solid #6c727f;
+  background-color: #122833;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+  position: relative;
+  margin-left: 10px;
+  transition: linear 0.3s;
+}
+
+.header__down__btn__shop:hover {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+.header__down__btn__fav::after {
+  position: absolute;
+  content: "8";
+  top: 0;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  background-color: #f01543;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 500;
+  font-family: Plus Jakarta Sans;
+  border-radius: 50%;
+}
+
+.header__down__btn__shop::after {
+  position: absolute;
+  content: "8";
+  top: 0;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  background-color: #f01543;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 500;
+  font-family: Plus Jakarta Sans;
+  border-radius: 50%;
+}
+
+.header__down__login {
+  display: flex;
+  gap: 20px;
+}
+
+.header__down__login button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 13px 32px;
+  font-size: 16px;
+  border-radius: 10px;
+  font-weight: 600;
+  color: white;
+  border: 1px solid white;
+  background-color: #122833;
+  transition: linear 0.3s;
+}
+
+.header__down__login button:hover {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.header__down__login button:first-child {
+  background-color: #f01543;
+  border: none;
+}
+
+.display__button {
+  display: none;
+}
+
+.menu__tr__section {
+  margin-top: -100px;
+  color: white;
+  padding: 130px 0 128px;
+  background: url(https://reservq.vercel.app/assets/inner-bg-99d2ac4c.png)
+    no-repeat center / cover;
+}
+
+.menu__tr__section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu__tr__section h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.menu__tr__section a {
+  font-size: 24px;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.menu__tr__section span {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.contact__section .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.contact__section__left h2 {
+  font-size: 48px;
+  color: #000929;
+  font-weight: 700;
+  margin: 40px 0px;
+}
+
+.contact__section__left__above,
+.contact__section__left__down {
+  gap: 20px;
+  align-items: center;
+  display: flex;
+  padding: 16px 45px 16px 30px;
+  border-radius: 20px;
+  width: 440px;
+  background: #fff;
+  margin-top: 30px;
+  border: 1px solid #f9fafb;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.contact__section__left__above__text h5,
+p {
+  margin: 0;
+}
+
+.contact__section__left__above__text h5,
+.contact__section__left__down__text h5 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000929;
+}
+
+.contact__section__left__above__text p,
+.contact__section__left__down__text p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #747681;
+  padding-top: 6px;
+}
+
+.contact__section__left__above__text a,
+.contact__section__left__down__text a {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000929;
+}
+
+.contact__section__left__above a,
+.contact__section__left__down a {
+  text-decoration: none;
+}
+
+.contact__section__left__above i,
+.contact__section__left__down i {
+  font-size: 44px;
+  color: #f01543;
+}
+
+.contact__section__right {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-top: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 30px 70px;
+  border-radius: 10px;
+  background-image: url(https://reservq.vercel.app/assets/from-e1762aba.png);
+  background-color: #f9fafb;
+}
+
+.contact__section__right__above {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+
+.contact__section__right input {
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid #f4f4f4;
+  background: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  width: 320px;
+}
+
+.contact__section__right__mid {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  margin-top: 15px;
+}
+
+.firstinp,
+.secondinp,
+.thirdinp,
+.fourthinp,
+.fifthinp {
+  display: flex;
+  flex-direction: column;
+}
+
+.fifthinp {
+  margin-top: 15px;
+}
+
+.fifthinp textarea {
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid #f4f4f4;
+  background: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.contact__section__right label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000929;
+  margin-bottom: 3px;
+}
+
+.contact__foot {
+  width: 130px;
+  margin-top: 15px;
+  padding: 16px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #f01543;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  transition: all 0.5s linear;
+  overflow: hidden;
+  border: none;
+}
+
+.contact__foot:hover {
+  background-color: white;
+  color: red;
+  border: 1px solid red;
+}
+
+.contact__map iframe {
+  padding: 80px 0px;
+  width: 100%;
+}
+
+.home__questions__section {
+  background-image: url(https://reservq.vercel.app/assets/faq-bg-7118ca12.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px;
+}
+
+.home__questions__section .container {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.home__questions__section__left h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #000929;
+  margin-bottom: 30px;
+}
+
+.questions {
+  background-color: #fff;
+  border: 1px solid transparent;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  font-size: 18px;
+  padding: 20px;
+  font-weight: 600;
+  color: #000929;
+}
+
+.home__questions__section__images {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.home__questions__section__images__above {
+  display: flex;
+  gap: 30px;
+}
+
+.home__questions__section__images__down {
+  display: flex;
+  gap: 30px;
+}
+
+.home__questions__section__images__above__right,
+.home__questions__section__images__down__left {
+  position: relative;
+  color: white;
+  z-index: 0;
+}
+
+.home__questions__section__images__above__right h4,
+.home__questions__section__images__down__left h4 {
+  position: absolute;
+  bottom: 44px;
+  left: 40px;
+}
+
+.home__questions__section__images__above__right__overlay {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  background-color: #000929d6;
+  border-radius: 10px;
+}
+
+.home__questions__section__images__down__left__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #f01543d6;
+  border-radius: 10px;
+}
+
+.home__questions__section__images__above__right__icon,
+.home__questions__section__images__down__left__icon {
+  position: absolute;
+  top: 130px;
+  left: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.home__questions__section__images__above__right__icon i,
+.home__questions__section__images__down__left__icon i {
+  font-size: 24px;
+}
+
+.home__questions__section__images__above__right__icon h2,
+.home__questions__section__images__down__left__icon h2 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.home__apps__section {
+  background: url(https://reservq.vercel.app/assets/rest-bg-542f355f.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 101px 0 0px 0px;
+}
+
+.home__apps__section .container {
+  display: flex;
+  gap: 100px;
+}
+
+.home__apps__section__left {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.home__apps__section__left h2 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.home__apps__section__left h4 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #e5e6eb;
+}
+
+.home__apps__section__left__buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.home__apps__section__left__buttons button {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px;
+  justify-content: center;
+  border: none;
+  width: 225px;
+  height: 68px;
+  font-weight: 700;
+}
+
+.button__play {
+  background-color: white;
+  color: black;
+}
+
+.button__play i {
+  font-size: 32px;
+}
+
+.button__app {
+  background-color: black;
+  color: white;
+}
+
+.button__app i {
+  font-size: 44px;
+}
+
+footer {
+  padding: 110px 0;
+  background: url(https://reservq.vercel.app/assets/Footers-bg-7148736e.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer .container {
+  display: flex;
+  gap: 40px;
+  color: white;
+}
+
+.footer__left h4 {
+  color: #f4f4f6;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.footer__left__down {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.footer__left__down__icon {
+  border-radius: 8px;
+  background: #19213e;
+  width: 40px;
+  height: 40px;
+
+  line-height: 40px;
+  color: #747681;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: linear 0.3s;
+}
+
+.footer__left__down__icon:hover {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+.footer__mid__left,
+.footer__mid__right {
+  display: flex;
+  flex-direction: column;
+  padding: 0 12px;
+  gap: 30px;
+}
+
+.footer__mid__left h3,
+.footer__mid__right h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.footer__mid__left ul,
+.footer__mid__right ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer__mid__left ul a:hover,
+.footer__mid__right ul a:hover {
+  color: red;
+}
+
+.footer__mid__left ul a,
+.footer__mid__right ul a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  margin-left: -30px;
+  font-weight: 500;
+  transition: linear 0.3s;
+}
+
+.footer__right__above h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.footer__right__above__sub input {
+  width: 261px;
+  height: 56px;
+  background: rgba(231, 229, 234, 0.2);
+  border-radius: 10px;
+  color: #fff;
+  border: 1px solid rgba(231, 229, 234, 0.2);
+  padding-left: 64px;
+}
+
+.footer__right__above__sub i {
+  position: relative;
+  top: 20px;
+  left: 60px;
+  font-size: 20px;
+}
+
+.footer__all {
+  display: flex;
+}
+
+.footer__all2 {
+  display: flex;
+  gap: 16px;
+}
+
+.footer__right__above__sub {
+  display: flex;
+  margin-top: 26px;
+  gap: 20px;
+  margin-left: -38px;
+}
+
+.footer__right__above__sub button {
+  width: 140px;
+  height: 56px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #f01543;
+  color: #fff;
+  padding: 13px 32px;
+  border-radius: 10px;
+  border: none;
+}
+
+.footer__right__above__sub button:hover {
+  background-color: white;
+  color: red;
+  border: 1px solid red;
+}
+
+.footer__right__down {
+  margin-top: 36px;
+}
+
+.footer__right__down h6 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.footer__right__down__images {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.footer__end {
+  width: 100%;
+  padding: 17px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000929;
+  color: #9ea3ae;
+  font-size: 18px;
+}
+
+.footer__end a {
+  font-size: 18px;
+  color: #9ea3ae;
+}
+
+.display__button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: #f01543;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 18px;
+  display: none;
+}
+
+@media only screen and (max-width: 1578px) {
+  .container {
+    flex-direction: column;
+
+    align-items: center;
+  }
+}
+
+
+
+@media only screen and (max-width: 1199px) {
+  .header__above {
+    display: none;
+  }
+
+  .header__down__menu {
+    display: none;
+  }
+
+  .header__down__btn {
+    display: none;
+  }
+
+  .header__down__login {
+    display: none;
+  }
+
+  .display__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer__all,
+  .footer__all2,
+  .footer__right {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .home__apps__section__left__buttons {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 865px) {
+  .home__apps__section__right {
+    display: none;
+  }
+
+  .contact__section__right {
+    width: 400px;
+  }
+
+  .contact__section__right__above,
+  .contact__section__right__mid {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 707px) {
+  .home__questions__section__images {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 596px) {
+  .questions {
+    width: 400px;
+  }
+
+  .container {
+    width: 400px;
+  }
+
+  .display__button {
+    margin-right: 80px;
+  }
+
+  .home__apps__section__left h2 {
+    font-size: 24px;
+  }
+
+  .home__apps__section__left h4 {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 456px) {
+  .container {
+    width: 340px;
+  }
+
+  .contact__section__left h2 {
+    font-size: 22px;
+  }
+
+  .contact__section__left__above,
+  .contact__section__left__down {
+    width: 294px;
+    height: 280px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+  }
+
+  .contact__section__right {
+    width: 260px;
+  }
+
+  .contact__section__right__above,
+  .contact__section__right__mid {
+    flex-direction: column;
+  }
+
+  .firstinp input,
+  .secondinp input,
+  .thirdinp input,
+  .fourthinp input {
+    width: 200px;
+  }
+
+  .home__questions__section__left h2 {
+    font-size: 22px;
+  }
+
+  .questions {
+    width: 250px;
+    font-size: 16px;
+  }
+
+  .footer__right__above__sub {
+    flex-direction: column;
+    margin-left: 10px;
+  }
+
+  .footer__right__above__sub i {
+    display: none;
+  }
+
+  .footer__right__down__images {
+    flex-direction: column;
+  }
+
+  .footer__right__down__images img {
+    width: 50px;
+    height: 30px;
+  }
+}
+
+@media only screen and (max-width: 395px) {
+  .container {
+    width: 260px;
+  }
+
+  .display__button{
+    padding: 10px;
+   
+  }
+}
